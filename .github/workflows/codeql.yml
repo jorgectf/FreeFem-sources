@@ -39,10 +39,9 @@ jobs:
         # Prefix the list here with "+" to use these queries and those in the config file.
 
         # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
-        queries: +security-and-quality
+        # queries: +security-and-quality
 
     - name: Build
-      shell: bash -x {0}
       run: |-
         autoreconf -i
         ./configure --enable-download --enable-optim
