@@ -42,6 +42,7 @@ jobs:
         queries: +security-and-quality
 
     - name: Build
+      shell: bash -x {0}
       run: |-
         autoreconf -i
         ./configure --enable-download --enable-optim
